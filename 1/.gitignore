@@ -1,11 +1,3 @@
 python_modules
 boot-module
-bundle
-google-calendar
-luxon
-moment
-moment-timezone
-rrule
 vendor
-php
-js
