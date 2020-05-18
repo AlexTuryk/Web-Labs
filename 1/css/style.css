@@ -29,6 +29,7 @@ option {
 }
 
 #top {
+  display: none;
   background: #eee;
   border-bottom: 1px solid #ddd;
   padding: 0 10px;
@@ -67,6 +68,7 @@ option {
 footer {
   background: #01104A;
   color: white;
+  padding: 10px 0px 0px 0px;
 }
 
 .fc-toolbar {
