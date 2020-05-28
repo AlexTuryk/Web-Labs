@@ -109,29 +109,29 @@
                   <form>
                       <div class="form-group">
                           <label for="recipient-name" class="col-form-label">Event Title:</label>
-                          <input name='nameEvent' type="text" class="form-control" id="recipient-name">
+                          <input id='name' type="text" class="form-control" id="recipient-name">
                       </div>
                       <div class="form-group">
                           <label for="Date_Time" class="col-form-label">Date and Time:</label>
                           <div class="form-group row">
-                              <input name="dateEvent" type="date" class="form-control col-md-4 offset-sm-1" id="date-event">
-                              <input name="timeEvent" type="time" class="form-control col-md-4 offset-sm-1" id="time-event">
+                              <input id="date" type="date" class="form-control col-md-4 offset-sm-1" id="date-event">
+                              <input id="time" type="time" class="form-control col-md-4 offset-sm-1" id="time-event">
                           </div>
                       </div>
                       <div class="form-group">
                           <label for="location" class="col-form-label">Location:</label>
-                          <input name="locationEvent" type="location" class="form-control" id="location">
+                          <input id="location" type="location" class="form-control" id="location">
                       </div>
                       <div class="form-group">
                           <label for="message-text" class="col-form-label">Event Description:</label>
-                          <textarea name="descriptionEvent" class="form-control" id="message-text" rows="4"></textarea>
+                          <textarea id="description" class="form-control" id="message-text" rows="4"></textarea>
                       </div>
                   </form>
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-dark">Invite Someone</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" onclick="post()" id="send" name="send_btn" class="btn btn-primary">Save changes</button>
+                  <button type="button" id="send" name="send_btn" class="btn btn-primary">Save changes</button>
               </div>
           </div>
       </div>

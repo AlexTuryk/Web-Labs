@@ -1,15 +1,17 @@
 var ev = document.getElementById('send');
 if(ev) ev.addEventListener('click', get);
 function get() {
-    var name=document.forms.create.nameEvent.value;
-    var date=document.forms.create.dateEvent.value;
-    var time=document.forms.create.timeEvent.value;
-    var location=document.forms.create.locationEvent.value;
-    var description=document.forms.create.descriptionEvent.value;
+    var name=document.getElementById('name').value;
+    var date=document.getElementById('date').value;
+    var time=document.getElementById('time').value;
+    var location=document.getElementById('location').value;
+    var description=document.getElementById('description').value;
+const data = {"Name":name, "date":date, "time":time, "location":location, "description":description};
+console.log('data successfuly claimed: ',data);
 }
- const data = {"Name": name, "date": date, "time": time, "location": location, "description": description};
+
 function post() {
-  fetch('http://localhost:5001/api/user/add',{
+  fetch('http://127.0.0.1:5501/user/add',{
     mode: 'cors',
     method: 'POST',
     headers: {
@@ -19,7 +21,7 @@ function post() {
   })
   .then(response => response.json())
   .then(data => {
-    console.log('Successful :', data);
+    console.log('Successful post :', data);
   })
   .catch((error) => {
     console.error('Error', error);
