@@ -3,6 +3,7 @@ import EventForm from '../Forms/addevent';
 import LoginForm from '../Forms/login'
 import { Component } from '@fullcalendar/core';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends React.Component{
     render(){
@@ -20,9 +21,9 @@ export default class Navbar extends React.Component{
                                 <img src="http://ai.lviv.ua/wp-content/uploads/2017/04/AI-11.png"/>
                             </a>
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active"><a  className="nav-link" href="#"><span className="fa fa-calendar-alt fa-lg"></span> Головна</a></li>
-                                <li className="nav-item"><a className="nav-link" data-toggle="modal" data-target="#Eventmodal" href="create" id="addevent"><span className="fa fa-calendar-plus fa-lg"></span> Додати подію</a></li>
-                                <li className="nav-item"><a  className="nav-link"><span className="fa fa-list-alt fa-lg"></span> Переглянути запрошення</a></li>
+                                <li className="nav-item "><a  className="nav-link" href="/"><span className="fa fa-calendar-alt fa-lg"></span> Головна</a></li>
+                                {/*<li className="nav-item"><a className="nav-link" data-toggle="modal" data-target="#Eventmodel" href="create" id="addevent"><span className="fa fa-calendar-plus fa-lg"></span>  Додати подію</a></li>*/}
+                                <li className="nav-item"><a  className="nav-link" href="/events"><span className="fa fa-list-alt fa-lg"></span> Переглянути події</a></li>
                                 <li className="nav-item selector" data-theme-system="bootstrap">
                                     <select className="form-control form-color" defaultValue={'default'}>
                                         <option value='default'>Тема</option>
