@@ -1,9 +1,9 @@
-import React from 'react'
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
+import React from 'react';
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
-import '../Calendar/main.scss'
-import '../Calendar/style.scss'
+import '../Calendar/main.scss';
+import '../Calendar/style.scss';
 /*import bootstrap from '@fullcalendar/bootstrap'*/
 
 export default class DemoApp extends React.Component {

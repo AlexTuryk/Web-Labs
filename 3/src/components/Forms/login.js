@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default class LoginForm extends React.Component{
     render(){
